@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>VideoPoster OAuth</title></head>
+<body>
+<p style="font-size:22px;text-align:center;padding-top:12%">Redirecting to VideoPoster…</p>
+<script>
+  // Pass OAuth params to local helper on the developer's own machine.
+  var q = window.location.search || "";
+  if (window.location.hash) { q += (q ? "&" : "?") + window.location.hash.substring(1); }
+  window.location.replace("http://localhost:8100/callback" + q);
+</script>
+</body>
+</html>
